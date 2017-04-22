@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" media="screen">
+    <link rel="stylesheet" href="../css/bootkit.css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <style type="text/css">
+        a, a:hover, a:active, a:focus {
+            color: #fff;
+        }
+
+        .panel {
+            margin: 0 !important;
+            -webkit-border-radius: 0 !important;
+            -moz-border-radius: 0 !important;
+            -ms-border-radius: 0 !important;
+            -o-border-radius: 0 !important;
+            border-radius: 0 !important;
+            background: #5C5C5C !important;
+        }
+
+        .active.panel {
+            background: #303030 !important;
+        }
+
+        .panel-body {
+            padding: 0 !important;
+        }
+
+        .list-ul {
+            display: block;
+            width: auto;
+            height: 40px;
+        }
+
+        .list-ul > i {
+            font-size: 15px;
+        }
+
+        .list-li {
+            width: auto;
+            height: 30px;
+            font-size: 14px;
+            line-height: 30px;
+            padding-left: 45px;
+        }
+
+    </style>
+
+</head>
+<body id="left-nav">
+<div class="panel-group" id="according">
+    <div class="panel bk-border-off list-box active">
+        <a class="panel-heading list-ul" href="#collapse-1" data-toggle="collapse" data-parent="#according">
+            <i class="fa fa-home bk-margin-right-10"></i>管理首页
+        </a>
+        <div id="collapse-1" class="collapse">
+            <div class="panel-body">
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+            </div>
+        </div>
+    </div>
+    <!--panel-->
+
+    <div class="panel bk-border-off list-box ">
+        <a class="panel-heading list-ul" href="#collapse-2" data-toggle="collapse" data-parent="#according">
+            <i class="fa fa-apple bk-margin-right-10"></i>管理首页
+        </a>
+        <div id="collapse-2" class="collapse">
+            <div class="panel-body">
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+            </div>
+        </div>
+    </div>
+    <!--panel-->
+
+    <div class="panel bk-border-off list-box">
+        <a class="panel-heading list-ul" href="#collapse-3" data-toggle="collapse" data-parent="#according">
+            <i class="fa fa-yahoo bk-margin-right-10"></i>管理首页
+        </a>
+        <div id="collapse-3" class="collapse">
+            <div class="panel-body">
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+            </div>
+        </div>
+    </div>
+    <!--panel-->
+
+
+    <div class="panel bk-border-off list-box">
+        <a class="panel-heading list-ul" href="#collapse-4" data-toggle="collapse" data-parent="#according">
+            <i class="fa fa-wechat bk-margin-right-10"></i>管理首页
+        </a>
+        <div id="collapse-4" class="collapse">
+            <div class="panel-body">
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+            </div>
+        </div>
+    </div>
+    <!--panel-->
+
+
+    <div class="panel bk-border-off list-box">
+        <a class="panel-heading list-ul" href="#collapse-5" data-toggle="collapse" data-parent="#according">
+            <i class="fa fa-beer bk-margin-right-10"></i>管理首页
+        </a>
+        <div id="collapse-5" class="collapse">
+            <div class="panel-body">
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+                <div class="list-li"><a href="">管理首页子类</a></div>
+            </div>
+        </div>
+    </div>
+    <!--panel-->
+
+
+</div>
+
+<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $('.list-box').on('click', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+</script>
+</body>
+</html>

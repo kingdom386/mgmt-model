@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/md5.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //参数
+            var param = { shopid: "1",device:"3" }
+            //方法名
+            var method = "GetIndexBar";
+            //密钥
+            var API_KEY = "gVzKTvzJyRTCkdDQ4AcQaCgp5iIpskbq";
+            //当前时间戳
+            var reqtime = Date.parse(new Date());
+            var sign = md5(JSON.stringify(param) + method + reqtime + API_KEY);
+
+            $.ajax({
+                url: "http://192.168.1.73:8989/API/WebApi.ashx",
+                async: true,
+                type: "post",
+                dataType: 'json',
+                data: {
+                    param: JSON.stringify(param),
+                    method: method,
+                    reqtime: reqtime,
+                    sign: sign
+
+                },
+                success: function (data) {
+
+                    alert(data.status);
+                    alert(data.msg);
+
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert(XMLHttpRequest.status);
+                    alert(XMLHttpRequest.readyState);
+                    alert(textStatus);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

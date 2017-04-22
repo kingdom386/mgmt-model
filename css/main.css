@@ -1,0 +1,86 @@
+@charset "utf-8";
+ul {
+    list-style: none;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+/*管理系统头部样式*/
+html {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+#top {
+    width: 100%;
+    height: 100%;
+    background: #28b779;
+    padding: 0 0 0 30px;
+}
+
+/*左边导航栏*/
+
+#left-nav {
+    width: 100%;
+    height: 100%;
+    background: #5C5C5C;
+}
+
+/*主题内容*/
+#main {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 20px;
+}
+
+.main-page-location {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 8888;
+    width: 100%;
+    height: 40px;
+}
+
+.page-loc-box {
+    width: auto;
+    height: 40px;
+    background: #eee;
+}
+
+.page-loc-item {
+    line-height: 40px;
+}
+
+.page-loc-item a {
+    color: #333;
+}
+
+.main-content {
+    margin-top: 40px;
+}
+
+/*主题内容木块*/
+
+.main-box{
+    margin-top:100px;
+    width:auto;
+    height:auto;
+}
+
+.main-box-title{
+    width:auto;
+    color: #333;
+}
+
+
+
+
+
+
+
