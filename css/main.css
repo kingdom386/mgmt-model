@@ -67,16 +67,44 @@ html, body {
 
 /*主题内容木块*/
 
-.main-box{
-    margin-top:100px;
-    width:auto;
-    height:auto;
+.main-box {
+    margin-top: 100px;
+    width: auto;
+    height: auto;
 }
 
-.main-box-title{
-    width:auto;
+.main-box-title {
+    width: auto;
     color: #333;
 }
+
+/*公共遮罩层*/
+.public-layer {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+.layer-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 500px;
+    margin-top:-250px;
+    margin-left:-450px;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+
 
 
 
